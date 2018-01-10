@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* customize tachyons modules and rebuild css file with npm script build:tachyons */
+/* "build:tachyons": "tachyons src/libs/tachyons/tachyons.css > src/app/tachyons.css" */
+@import "./app/tachyons.css";
+
+body, html {
+  margin:0;
+  height:100%;
+}
+
+app-root {
+  min-height:100%;
+}
