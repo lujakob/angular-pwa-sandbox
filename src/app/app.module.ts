@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { ReposModule } from './repos/repos.module';
-import { ReposRoutingModule } from './repos/repos-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -18,8 +16,6 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReposModule,
-    ReposRoutingModule,
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
