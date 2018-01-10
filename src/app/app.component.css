@@ -1,0 +1,3 @@
+/* after changing tachyons modules the imported file has to be rebuilt with npm script build:tachyons */
+/* "build:tachyons": "tachyons src/libs/tachyons/tachyons.css > src/app/tachyons.css" */
+@import "./tachyons.css";
