@@ -1,0 +1,9 @@
+<p>
+  repos works!
+</p>
+
+<ul>
+	<li *ngFor="let item of results">
+		<a routerLink="/repos/{{item.name}}/commits" routerLinkActive="active">{{item.html_url}}</a>
+	</li>
+</ul>
