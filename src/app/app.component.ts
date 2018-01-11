@@ -3,7 +3,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
 import {SVG_ICONS} from '../constants'
 
-const links = [{path: '/', title: 'Home'}, {path: 'repos', title: 'Repositories'}];
+const links = [
+  {path: '/', title: 'Home'},
+  {path: 'repos', title: 'Repositories'},
+  {path: 'catalog', title: 'Catalog'}
+  ];
 
 @Component({
   selector: 'app-root',

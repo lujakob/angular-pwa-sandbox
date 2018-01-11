@@ -5,7 +5,12 @@ const routes: Routes = [
   {
     path: 'repos',
     loadChildren: 'app/repos/repos.module#ReposModule',
+  },
+  {
+    path: 'catalog',
+    loadChildren: 'app/catalog/catalog.module#CatalogModule',
   }
+
 ];
 
 @NgModule({
