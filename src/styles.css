@@ -1,11 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
-/* customize tachyons modules and rebuild css file with npm script build:tachyons */
-/* "build:tachyons": "tachyons src/libs/tachyons/tachyons.css > src/app/tachyons.css" */
-@import "./app/tachyons.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 body, html {
-  margin:0;
   height:100%;
 }
 

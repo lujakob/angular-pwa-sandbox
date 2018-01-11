@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "tachyons.css",
         "styles.css"
       ],
       "scripts": [],

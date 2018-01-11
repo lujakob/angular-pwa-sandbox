@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pwa": "ng build --prod && http-server ./dist -o",
-    "build:tachyons": "tachyons src/libs/tachyons/tachyons.css > src/app/tachyons.css"
+    "css:tachyons": "tachyons src/libs/tachyons/tachyons.css > src/tachyons.css"
   },
   "private": true,
   "dependencies": {

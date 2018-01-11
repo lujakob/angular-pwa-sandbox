@@ -23,10 +23,12 @@
  *
  */
 
+/* customize tachyons modules and rebuild css file with npm run css:tachyons */
+/* "css:tachyons": "tachyons src/libs/tachyons/tachyons.css > src/tachyons.css" */
 
 /* External Library Includes */
 @import './_normalize';
-
+@import './_reset';
 
 /* Modules */
 @import './_box-sizing';

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import {DomSanitizer} from '@angular/platform-browser';
-import {MatIconRegistry} from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material';
+import {SVG_ICONS} from '../constants'
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,14 @@ export class AppComponent {
   title = 'app';
   links = [{path: '/', title: 'Home'}, {path: 'repos', title: 'Repositories'}];
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
-    iconRegistry.addSvgIcon(
-      'thumbs-up',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
+  constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) {
+    this.registerSvgIcons();
+  }
+
+  registerSvgIcons() {
+    SVG_ICONS.map(item => this.iconRegistry.addSvgIcon(
+      item.name,
+      this.sanitizer.bypassSecurityTrustResourceUrl(item.path)
+    ))
   }
 }
