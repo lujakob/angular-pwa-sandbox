@@ -8,3 +8,8 @@ body, html {
 app-root {
   min-height:100%;
 }
+
+/* @Todo: move to theme file */
+.mat-nav-list .mat-list-item.active {
+  background: #dddddd;
+}

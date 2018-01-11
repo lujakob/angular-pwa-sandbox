@@ -3,14 +3,16 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
 import {SVG_ICONS} from '../constants'
 
+const links = [{path: '/', title: 'Home'}, {path: 'repos', title: 'Repositories'}];
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  links = [{path: '/', title: 'Home'}, {path: 'repos', title: 'Repositories'}];
+  public title = 'app';
+  public links = links;
 
   constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) {
     this.registerSvgIcons();

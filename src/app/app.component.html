@@ -5,6 +5,7 @@
 				mat-list-item
 				routerLink="{{link.path}}"
 				routerLinkActive="active"
+				[routerLinkActiveOptions]="{exact: link.path === '/'}"
 				(click)="drawer.close()"
 				*ngFor="let link of links"
 			>{{link.title}}</a>
